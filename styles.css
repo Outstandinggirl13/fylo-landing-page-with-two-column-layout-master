@@ -1,0 +1,119 @@
+/* ===========================
+   FONTS
+   =========================== */
+
+/* raleway-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/raleway-v37-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/raleway-v37-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/open-sans-v44-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ===========================
+   RESET
+   =========================== */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+      
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+      
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border-color: transparent;
+}
+      
+a {
+    text-decoration: none;
+    color: inherit;
+}
+      
+ul,
+ol {
+    list-style-type: none;
+}
+      
+/* ===========================
+       CSS VARIABLES
+   =========================== */
+      
+:root {
+      
+    /* Primary */
+
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    /* Accent */
+
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+
+    /* Neutral */
+    
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+      
+    --font-base: 'Open Sans', sans-serif;
+    --font-title: 'Raleway', sans-serif;
+}
+   
+/* ===========================
+      BASE
+   =========================== */
+   
+body {
+    font-family: var(--font-base);
+    color: var(--very-dark-blue);
+    font-size: 16px;
+    background-color: var(--light-grayish-blue);
+}
+
+/* ===========================
+   LAYOUT & ELEMENTS
+   =========================== */
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
