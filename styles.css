@@ -87,7 +87,7 @@ ol {
     
     --light-grayish-blue: hsl(240, 75%, 98%);
     --light-gray: hsl(0, 0%, 75%);
-    --light-gray-shadow: rgba(191,191,191,0.25);
+    --light-gray-shadow: rgba(191,191,191,0.1);
       
     --font-base: 'Open Sans', sans-serif;
     --font-title: 'Raleway', sans-serif;
@@ -126,34 +126,32 @@ body {
 }
 
 .header__link {
-    font-weight: 700;
     font-size: 13px;
-    letter-spacing: -0.04em;
 }
 
 .accessibility {
     display: flex;
     flex-direction: column-reverse;
-    padding: 84px 26px 98px;
+    padding: 74px 26px 98px;
     text-align: center;
 }
 
 .accessibility__image {
-    max-width: 250px;
+    max-width: 310px;
     margin: 0 auto;
 }
 
 .accessibility__title {
     font-size: 24px;
     line-height: 37px;
-    margin: 34px 10px 24px;
+    margin: 36px 0px 24px;
+    letter-spacing: 0.03em;
 }
 
 .accessibility__description {
     font-size: 14px;
     line-height: 21px;
-    letter-spacing: -0.01em;
-    margin: 23px 12px 32px 5px;
+    margin: 23px 12px 30px 5px;
 }
 
 .accessibility__form {
@@ -180,7 +178,7 @@ body {
 .accessibility__button {
     background-color: var(--bright-blue);
     color: var(--light-grayish-blue);
-    padding: 10px;
+    padding: 8px;
     width: 100%;
     border-radius: 4px;
     font-size: 14px;
@@ -201,6 +199,7 @@ body {
 
 .collaboration__illustration {
     margin-top: 53px;
+    padding: 33px 0 0;
 }
 
 .collaboration__image {
@@ -209,7 +208,7 @@ body {
 }
 
 .collaboration__content {
-    padding: 82px 20px;
+    padding: 86px 20px 82px;
 }
 
 .collaboration__title {
@@ -218,6 +217,7 @@ body {
     line-height: 22px;
     text-align: center;
     margin-bottom: 24px;
+    letter-spacing: 0.04em;
 }
 
 .collaboration__description {
@@ -257,26 +257,28 @@ body {
 .collaboration__testimonial {
     background-color: white;
     margin: 0 28px;
-    padding: 20px 27px 21px;
+    padding: 20px 16px 21px 26px;
     border-radius: 6px;
-    box-shadow: 0px 1px 18px 6px var(--light-gray-shadow);
+    box-shadow: 0px 1px 6px 6px var(--light-gray-shadow);
 }
 
 .collaboration__testimonial-icon {
-    width: 9px;
+    width: 12px;
+    height: 12px;
 }
 
 .collaboration__testimonial-text {
-    margin: 10px 0 12px;
+    margin: 6px 0 12px;
     font-size: 10px;
     line-height: 18px;
-    font-weight: 700;
+    letter-spacing: 0.028em;
+    
 }
 
 .collaboration__testimonial-author {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 }
 
 .collaboration__testimonial-avatar {
@@ -290,7 +292,7 @@ body {
     line-height: 12px;
     letter-spacing: 0.07em;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .collaboration__testimonial-role {
@@ -308,10 +310,10 @@ body {
 }
 
 .signup__title {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     margin-bottom: 17px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.08em;
 }
 
 .signup__description {
@@ -331,23 +333,27 @@ body {
 
 .signup__input {
     background-color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
+    padding: 2px 6px 6px;
+    border: none;
+    border-radius: 2px;
+    line-height: 30px;
+    height: 32px;
 }
 
 .signup__input::placeholder {
     font-size: 10px;
+    line-height: 10px;
     color: var(--light-gray);
     letter-spacing: -0.01em;
-    font-weight: 700;
-    letter-spacing: -0.03em;
 }
 
 .signup__button {
     background-color: var(--bright-blue);
-    border-radius: 4px;
+    border: none;
+    border-radius: 2px;
     font-size: 10px;
-    padding: 9px;
+    padding: 8px;
+    letter-spacing: 0.02em;
 }
 
 .footer {
@@ -356,16 +362,16 @@ body {
 }
 
 .footer__references {
-    padding: 66px 39px 44px;
+    padding: 66px 40px 44px;
 }
 
 .footer__contact {
-    margin: 0 0 56px;
+    margin: 0 0 62px;
 }
 
 .footer__logo {
-    max-width: 176px;
-    margin-bottom: 40px;
+    width: 176px;
+    margin-bottom: 42px;
 }
 
 .footer__contact-group {
@@ -380,19 +386,19 @@ body {
 
 .footer__contact-phone, 
 .footer__contact-email {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 18px;
 }
 
 .footer__email-logo {
-    width: 19px;
-    height: 15px;
+    width: 20px;
+    height: 17px;
 }
 
 .footer__links {
     display: flex;
     flex-direction: column;
-    margin-bottom: 49px;
+    margin-bottom: 32px;
 }
 
 .footer__link {
