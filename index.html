@@ -30,10 +30,11 @@
           Access them wherever you need, share and collaborate with friends, 
           family, and co-workers.
         </p>
-        <form action="" class="accessibility__form">
+        <form action="" class="accessibility__form" novalidate>
           <input type="email" class="accessibility__input" placeholder="Enter your email...">
           <button class="accessibility__button">Get Started</button>
         </form>
+        <p class="accessibility__form-error">Please check your email</p>
       </section>
       <section class="accessibility__illustration">
         <img src="assets/images/illustration-1.svg" class="accessibility__image" width="1132.93" height="839.14" alt="Man and woman organizing documents in a large folder.">
@@ -92,8 +93,9 @@
         </p>
       </section>
       <section class="signup__form">
-        <form action="" class="signup__form-inner">
+        <form action="" class="signup__form-inner" novalidate>
           <input type="email" class="signup__input" placeholder="email@example.com">
+          <p class="signup__form-error">Please check your email</p>
           <button class="signup__button">Get Started For Free</button>
         </form>
       </section>
@@ -153,5 +155,7 @@
       </p>
     </section>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

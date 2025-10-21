@@ -76,7 +76,7 @@ ol {
     /* Primary */
 
     --very-dark-blue: hsl(243, 87%, 12%);
-    --desaturated-blue: hsl(238, 22%, 44%);
+    --desaturated-blue: hsl(239, 22%, 44%);
 
     /* Accent */
 
@@ -84,6 +84,7 @@ ol {
     --bright-blue-active: hsl(221, 100%, 71%);
     --moderate-cyan: hsl(170, 45%, 43%);
     --moderate-cyan-active: hsl(169, 68%, 70%);
+    --warning-red: hsl(343, 48%, 68%);
 
     /* Neutral */
     
@@ -104,6 +105,7 @@ body {
     color: var(--very-dark-blue);
     font-size: 16px;
     background-color: white;
+    overflow-x: hidden;
 }
 
 /* ===========================
@@ -214,6 +216,14 @@ body {
 .accessibility__button:active {
     background-color: var(--bright-blue-active);
     cursor: pointer;
+}
+
+.accessibility__form-error {
+    margin-top: 4px;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+    color: var(--warning-red);
+    display: none;
 }
 
 .collaboration {
@@ -426,7 +436,7 @@ body {
 
 .signup__input {
     background-color: white;
-    border: none;
+    color: var(--desaturated-blue);
     border-radius: 2px;
     height: 2rem;
     height: clamp(2rem, 0rem + 8.5333vw, 4rem);;
@@ -447,7 +457,7 @@ body {
 
 .signup__button {
     background-color: var(--bright-blue);
-    border: none;
+    /* border: none; */
     border-radius: 2px;
     letter-spacing: 0.02em;
     font-size: 0.625rem;
@@ -460,6 +470,16 @@ body {
 .signup__button:active {
     background-color: var(--bright-blue-active);
     cursor: pointer;
+}
+
+.signup__form-error {
+    margin-top: 4px;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+    color: white;
+    text-align: start;
+    margin-bottom: 12px;
+    display: none;
 }
 
 .footer {
@@ -493,7 +513,6 @@ body {
     gap: clamp(1.25rem, -0.25rem + 6.4vw, 2.75rem);
     margin-bottom: 1.375rem;
     margin-bottom: clamp(1.375rem, -0.3125rem + 7.2vw, 2rem);
-    /* margin-bottom: 32px; */
 }
 
 .footer__phone-img {
@@ -881,7 +900,7 @@ body {
     }
 
     .footer__social {
-        margin-top: 72px;
+        margin-top: 62px;
         justify-content: flex-start;
         gap: 5px;
     }
