@@ -149,6 +149,7 @@ body {
 }
 
 .accessibility__image {
+    width: 82.5vw;
     width: clamp(0rem, 82.5vw, 40.125rem);
     margin: 0 auto;
 }
@@ -177,10 +178,10 @@ body {
 }
 
 .accessibility__form {
-    margin: 0.6875rem;
-    margin: 0 clamp(0.6875rem, -1.125rem + 7.733333333333333vw, 2.5rem);
     display: flex;
     flex-direction: column;
+    margin: 0.6875rem;
+    margin: 0 clamp(0.6875rem, -1.125rem + 7.733333333333333vw, 2.5rem);
     gap: 1rem;
     gap: clamp(1rem, -0.0625rem + 4.533333333333333vw, 2.0625rem);
 }
@@ -189,8 +190,10 @@ body {
     width: 100%;
     border: 1px solid var(--desaturated-blue);
     border-radius: 4px;
-    padding: 0.5625rem 1.375rem;
-    padding: clamp(0.5625rem, -0.625rem + 5.066666666666666vw, 1.75rem)
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0rem + 3.2vw, 1.5rem);
+    padding: 0.75rem 1.375rem;
+    padding: clamp(0.75rem, 0rem + 3.2vw, 1.5rem)
              clamp(1.375rem, 0.1875rem + 5.066666666666666vw, 2.5625rem);
 }
 
@@ -219,8 +222,10 @@ body {
 }
 
 .accessibility__form-error {
-    margin-top: 4px;
-    font-size: 13px;
+    margin-top: 0.25rem;
+    margin-top: clamp(0.25rem, -0.25rem + 2.1333vw, 0.75rem);
+    font-size: 0.8125rem;
+    font-size: clamp(0.8125rem, 0.25rem + 2.4vw, 1.375rem);
     letter-spacing: -0.01em;
     color: var(--warning-red);
     display: none;
@@ -237,7 +242,6 @@ body {
 }
 
 .bg__image-mobile {
-    width: 23.4375rem;
     width: 100vw;
 }
 
@@ -309,7 +313,7 @@ body {
 
 .collaboration__cta-text {
     color: var(--moderate-cyan);
-    line-height: 24px;
+    line-height: 1.5rem;
     font-size: 0.75rem;
     font-size: clamp(0.75rem, 0rem + 3.2vw, 1.5rem);
 }
@@ -341,9 +345,9 @@ body {
 }
 
 .collaboration__testimonial-icon {
-    width: 12px;
-    height: 12px;
+    width: 0.75rem;
     width: clamp(0.75rem, -0.12499999999999989rem + 3.733333333333333vw, 1.625rem);
+    height: 0.75rem;
     height: clamp(0.75rem, -0.12499999999999989rem + 3.733333333333333vw, 1.625rem);
 }
 
@@ -439,7 +443,9 @@ body {
     color: var(--desaturated-blue);
     border-radius: 2px;
     height: 2rem;
-    height: clamp(2rem, 0rem + 8.5333vw, 4rem);;
+    height: clamp(2rem, 0rem + 8.5333vw, 4rem);
+    font-size: 0.625rem;
+    font-size: clamp(0.625rem, 0rem + 2.6667vw, 1.25rem);
     padding: 0.125rem 0.375rem 0.375rem;
     padding: clamp(0.125rem, -1rem + 4.8vw, 1.25rem)
              clamp(0.375rem, -0.25rem + 2.6667vw, 1rem)
@@ -457,7 +463,6 @@ body {
 
 .signup__button {
     background-color: var(--bright-blue);
-    /* border: none; */
     border-radius: 2px;
     letter-spacing: 0.02em;
     font-size: 0.625rem;
@@ -473,8 +478,10 @@ body {
 }
 
 .signup__form-error {
-    margin-top: 4px;
-    font-size: 13px;
+    margin-top: 0.25rem;
+    margin-top: clamp(0.25rem, -0.25rem + 2.1333vw, 0.75rem);
+    font-size: 0.8125rem;
+    font-size: clamp(0.8125rem, 0.25rem + 2.4vw, 1.375rem);
     letter-spacing: -0.01em;
     color: white;
     text-align: start;
@@ -495,8 +502,8 @@ body {
 }
 
 .footer__contact {
-    margin-bottom: 3.875rem;
-    margin-bottom: clamp(3.875rem, 0.25rem + 15.4667vw, 7.5rem);
+    margin-bottom: 3.375rem;
+    margin-bottom: clamp(3.375rem, -0.5rem + 17.0667vw, 7.5rem);
 }
 
 .footer__logo {
@@ -526,8 +533,6 @@ body {
 .footer__contact-email {
     font-size: 1rem;
     font-size: clamp(1rem, 0.125rem + 3.7333vw, 1.875rem);
-    font-size: 1.125rem;
-    font-size: clamp(1.125rem, 0.375rem + 3.2vw, 1.875rem);
 }
 
 .footer__email-img {
@@ -548,8 +553,8 @@ body {
     font-size: clamp(1rem, 0rem + 4.2667vw, 2rem);
     line-height: 1rem;
     line-height: clamp(1rem, 0rem + 4.2667vw, 2rem);
-    margin-bottom: clamp(1.375rem, 0rem + 5.8667vw, 2.75rem);
-    margin-bottom: clamp(1.375rem, 0rem + 5.8667vw, 2.75rem);
+    margin-bottom: 22px;
+    margin-bottom: clamp(22px, 0rem + 5.8667vw, 2.75rem);
 }
 
 .footer__link:hover,
@@ -568,6 +573,8 @@ body {
 .footer__social-icon {
     width: 2.125rem;
     width: clamp(2.125rem, 0rem + 9.0667vw, 4.25rem);
+    height: 2.125rem;
+    height: clamp(2.125rem, 0rem + 9.0667vw, 4.25rem);
 }
 
 .footer__social-icon:hover .icon__facebook,
@@ -605,7 +612,7 @@ body {
     }
 
     .collaboration__cta-group {
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
     }
 
     .collaboration__testimonial-text {
@@ -622,11 +629,11 @@ body {
 
     .signup__title {
         letter-spacing: 0.0em;
-        padding-right: 8px;
+        padding-right: 0.5rem;
     }
 
     .footer__contact-group {
-        padding-left: 4px;
+        padding-left: 0.25rem;
     }
 
     .footer__contact-phone, 
@@ -635,33 +642,33 @@ body {
     }
 
     .footer__links {
-        margin-top: 64px;
+        margin-top: 4rem;
     }
 
     .footer__social {
-        margin-top: 56px;
+        margin-top: 3.5rem;
     }
 }
 
 @media (min-width: 1024px) {
 
     .header {
-        padding: 63px 80px;
+        padding: 3.9375rem 5rem;
     }
 
     .header__links {
-        gap: 52px;
+        gap: 3.25rem;
     }
 
     .header__link {
-        font-size: 17px;
+        font-size: 1.0625rem;
     }
 
     .accessibility {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 32px 80px 157px;
+        padding: 2rem 5rem 9.8125rem;
     }
 
     .accessibility__content {
@@ -670,42 +677,50 @@ body {
     }
 
     .accessibility__title {
-        line-height: 60px;
-        margin: 71px 0 15px;
+        line-height: 3.75rem;
+        margin: 4.4375rem 0 0.9375rem;
         letter-spacing: 0.0em;
         font-family: var(--font-title);
         font-size: 2.5rem;
     }
 
     .accessibility__description {
-        font-size: 18px;
-        line-height: 24px;
-        margin: 15px 0 26px;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        margin: 0.9375rem 0 1.625rem;
     }
 
     .accessibility__form {
         flex-direction: row;
         justify-content: flex-start;
         margin: 0;
-        gap: 16px;
+        gap: 1rem;
     }
 
     .accessibility__input {
-        max-width: 320px;
-        padding: 12px 21px;
+        font-size: 0.875rem;
+        max-width: 20rem;
+        max-height: 2.875rem;
+        padding: 0.75rem 1.3125rem;
+    }
+
+    .accessibility__form-error {
+        margin-top: 0.25rem;
+        font-size: 0.8125rem;
     }
 
     .accessibility__input::placeholder {
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 0.875rem;
+        line-height: 0.875rem;
         letter-spacing: 0.05em;
     }
 
     .accessibility__button {
-        font-size: 14px;
-        line-height: 14px;
-        padding: 10px;
-        max-width: 200px;
+        max-height: 2.875rem;
+        font-size: 0.875rem;
+        line-height: 0.875rem;
+        padding: 0.75rem;
+        max-width: 12.5rem;
     }
 
     .accessibility__image {
@@ -726,192 +741,198 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 58px 80px 106px;
+        padding: 3.625rem 5rem 6.625rem;
     }
 
     .collaboration__content {
         max-width: 45.4vw;
-        padding: 0px;
+        padding: 0rem;
     }
 
     .collaboration__title {
         font-size: 2.5rem;
-        line-height: 60px;
-        margin-bottom: 30px;
+        line-height: 3.75rem;
+        margin-bottom: 1.875rem;
         text-align: start;
-        padding-right: 90px;
+        padding-right: 5.625rem;
     }
 
     .collaboration__description {
-        font-size: 16px;
-        line-height: 24px;
-        padding-right: 130px;
-        margin-bottom: 16px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-right: 8.125rem;
+        margin-bottom: 1rem;
     }
 
     .collaboration__cta {
-        margin: 16px 0px 45px;
-        max-width: 170px;
+        margin: 1rem 0rem 2.8125rem;
+        max-width: 10.625rem;
     }
 
     .collaboration__cta-text {
-        font-size: 17px;
-        line-height: 17px;
+        font-size: 1.0625rem;
+        line-height: 1.0625rem;
         letter-spacing: -0.04em;
     }
 
     .collaboration__cta-icon {
-        width: 17px;
-        height: 17px;
+        width: 1.0625rem;
+        height: 1.0625rem;
     }
 
     .collaboration__testimonial {
-        margin: 45px 0 0;
-        padding: 28px 33px 27px;
-        max-width: 356px;
+        margin: 0;
+        padding: 1.75rem 2.0625rem 1.6875rem;
+        max-width: 22.25rem;
     }
 
     .collaboration__testimonial-icon {
-        width: 16px;
+        width: 1rem;
         height: fit-content;
     }
 
     .collaboration__testimonial-text {
-        font-size: 14px;
-        line-height: 23px;
+        font-size: 0.875rem;
+        line-height: 1.4375rem;
         letter-spacing: -0.001em;
-        margin: 8px 0 15px;
+        margin: 8px 0 0.9375rem;
     }
 
     .collaboration__testimonial-avatar {
-        max-width: 32px;
+        max-width: 2rem;
     }
 
     .collaboration__testimonial-author {
-        gap: 8px;
+        gap: 0.5rem;
     }
 
     .collaboration__testimonial-name{
-        font-size: 11px;
-        line-height: 11px;
-        margin: 2px 0 6px;
+        font-size: 0.6875rem;
+        line-height: 0.6875rem;
+        margin: 0.125rem 0 0.375rem;
     }
 
     .collaboration__testimonial-role {
-        font-size: 8px;
-        line-height: 8px;
+        font-size: 0.5rem;
+        line-height: 0.5rem;
         font-weight: 400;
     }
 
     .collaboration__image {
         width: clamp(23.9375rem, 0.0913rem + 37.2596vw, 33.625rem);
-        padding: 32px 0;
+        padding: 2rem 0;
     }
 
     .signup {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 107px 120px 36px 80px;
+        padding: 6.6875rem 7.5rem 2.25rem 5rem;
     }
 
     .signup__info {
-        max-width: 566px;
+        max-width: 35.375rem;
         text-align: start;
     }
 
     .signup__title {
-        font-size: 34px;
-        line-height: 34px;
-        margin-bottom: 24px;
+        font-size: 2.125rem;
+        line-height: 2.125rem;
+        margin-bottom: 1.5rem;
         letter-spacing: -0.03em;
     }
 
     .signup__description {
-        font-size: 17px;
-        line-height: 24px;
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
     }
 
     .signup__form-inner {
-        gap: 18px;
+        gap: 1.125rem;
     }
 
     .signup__input {
-        margin-top: 2px;
-        padding: 10px 21px 15px;
+        font-size: 0.875rem;
+        margin-top: 0.125rem;
+        padding: 0.625rem 1.3125rem 0.9375rem;
         height: 48px;
     }
 
+    .signup__form-error {
+        margin-top: 0.25rem;
+        font-size: 0.8125rem;
+    }
+
     .signup__input::placeholder {
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 0.75rem;
+        line-height: 0.75rem;
     }
 
     .signup__button {
-        font-size: 14px;
-        padding: 14px;
-        max-width: 200px;
+        font-size: 0.875rem;
+        padding: 0.875rem;
+        max-width: 12.5rem;
     }
 
     .footer__references {
-        padding: 108px 80px 58px;
+        padding: 6.75rem 5rem 3.625rem;
         display: grid;
         grid-template-columns: repeat(4, auto);
     }
 
     .footer__contact {
-        margin: 0px;
+        margin: 0rem;
     }
 
     .footer__logo {
-        width: 176px;
-        margin-bottom: 22px;
+        width: 11rem;
+        margin-bottom: 1.375rem;
     }
 
     .footer__contact-group {
-        margin: 0 0 15px 0;
-        gap: 18px;
+        margin: 0 0 0.9375rem 0;
+        gap: 1.125rem;
     }
 
     .footer__phone-img {
-        width: 18px;
-        height: 18px;
+        width: 1.125rem;
+        height: 1.125rem;
     }
 
     .footer__email-img {
-        width: 20px;
-        height: 16px;
+        width: 1.25rem;
+        height: 1rem;
     }
 
     .footer__contact-phone,
     .footer__contact-email {
-        font-size: 17px;
+        font-size: 1.0625rem;
         letter-spacing: -0.03em;
     }
 
     .footer__links {
-        margin: 72px 0 0 0;
+        margin: 4.5rem 0 0 0;
     }
 
     .footer__link {
-        font-size: 17px;
-        line-height: 18px;
-        margin-bottom: 20px;
+        font-size: 1.0625rem;
+        line-height: 1.125rem;
+        margin-bottom: 1.25rem;
     }
 
     .footer__social {
-        margin-top: 62px;
+        margin-top: 3.875rem;
         justify-content: flex-start;
-        gap: 5px;
+        gap: 0.3125rem;
     }
 
     .footer__social-icon {
-        width: 39px;
+        width: 2.4375rem;
     }
 
     .footer__attribution { 
-        font-size: 16px;
-        padding: 16px;
+        font-size: 1rem;
+        padding: 1rem;
     }
 
 }
@@ -927,11 +948,11 @@ body {
     }
 
     .collaboration__title {
-        padding-right: 0px;
+        padding-right: 0rem;
     }
 
     .footer__references {
-        grid-template-columns: 440px 270px 265px auto;
+        grid-template-columns: 27.5rem 16.875rem 16.5625rem auto;
     }
 
 }
