@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Fylo Project – Two-Column Layout, Mobile-to-Tablet Responsive](https://www.frontendmentor.io/solutions/fylo-project-two-column-layout-mobile-to-tablet-responsive-sTmkW248rL)
 - Live Site URL: [GitHub Pages](https://outstandinggirl13.github.io/fylo-landing-page-with-two-column-layout-master/)
 
 ## My process
